@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+:root {
+/*PRIMARY*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+/*GRADIENTS*/
+    --light-slate-blue: hsl(252, 100%, 67%); /*background-color*/
+    --light-royal-blue: hsl(241, 81%, 54%);  /*background-color*/
+
+    --violet-blue: hsla(256, 72%, 46%, 1);  /*circle*/
+    --persian-blue: hsla(241, 72%, 46%, 0); /*circle*/
+/*NEUTRAL*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.1rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 225px;
+}
+.blue_box{
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    max-width: 350px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3vh;
+    position: absolute;
+    z-index: 3;
+    left: 426px;
+}
+.title_bluebox {
+    color: var(--light-lavender);
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.circle {
+    background-color: red;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0) );
+    margin-bottom: 20px;
+}
+.text_circle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+.big_number {
+    font-size: 75px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: var(--white);
+}
+.little_number{
+    color: var(--light-lavender);
+    font-size: 0.9rem;
+}
+.great_text{
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.bottom_text{
+    color: var(--light-lavender);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.white_box{
+    background-color: white;
+    min-width: 350px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 3vh;
+    border-top-right-radius: 3vh;
+    max-height: 450px;
+}
+.summary{
+    margin-bottom: 20px;
+    color: var(--dark-gray-blue);
+    margin-right: 200px;
+}
+.reaction_box{
+    background-color: hsla(0, 100%, 67%, 0.048);
+    display: flex;
+    min-width: 300px;
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+}
+.memory_box{
+    background-color: hsl(39, 100%, 56%, 0.048);
+    display: flex;
+    min-width: 300px;
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+}
+.verbal_box{
+    background-color: hsl(166, 100%, 37%, 0.048);
+    display: flex;
+    min-width: 300px;
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+}
+.visual_box{
+    background-color: hsl(234, 85%, 45%, 0.048);
+    display: flex;
+    min-width: 300px;
+    margin-bottom: 50px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+}
+.box_text{
+    margin-right: 125px;
+    font-size: 1rem;
+    max-width: 300px;
+}
+.reaction_text{
+    color: hsl(0, 100%, 67%);
+}
+.verbal_text{
+    margin-right: 140px;
+    color: hsl(166, 100%, 37%);
+}
+.memory_text{
+    margin-right: 128px;
+    color: hsl(39, 100%, 56%);
+}
+.visual_text{
+    margin-right: 144px;
+    color: hsl(234, 85%, 45%);
+}
+.bold {
+    font-weight: bold;
+}
+.fine{
+    color: rgb(160, 160, 160);
+}
+img {
+    margin-right: 5px;
+}
+button{
+    width: 300px;
+    height: 50px;
+    border-radius: 3vh;
+    border-style: none;
+    background-color: var(--dark-gray-blue);
+    font-size: 1rem;
+}
+.continue {
+    color: white;
+}
+button:hover{
+    background: linear-gradient(var(--light-royal-blue), var(--light-slate-blue));
+    cursor: pointer;
+}
+
